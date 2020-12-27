@@ -10,11 +10,11 @@ public class VendingMachine {
 		return 10;
 	}
 	
-	VendingMachine() // ���캯��
+	VendingMachine() // 构造函数
 	{
 		total = 0;
 	}
-	VendingMachine(int price) // ����
+	VendingMachine(int price) // 函数重载:一个类可以有多个构造函数,只要它们的参数表不同
 	{
 		this.price = price;
 	}
@@ -32,10 +32,10 @@ public class VendingMachine {
 	void insertMoney(int amount)
 	{
 		balence += amount;
-		showBalence();
+		showBalance();
 	}
 	
-	void showBalence()
+	void showBalance()
 	{
 		System.out.println(this.balence);
 	}
@@ -53,11 +53,11 @@ public class VendingMachine {
 		VendingMachine vm = new VendingMachine();
 		VendingMachine vm1 = new VendingMachine(100);
 		vm.showPrompt();
-		vm.showBalence();
+		vm.showBalance();
 		vm.insertMoney(100);
 		vm1.insertMoney(200);
 		vm.getFood();
-		vm.showBalence();
+		vm.showBalance();
 	}
 
 }
