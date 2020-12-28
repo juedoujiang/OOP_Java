@@ -22,6 +22,10 @@ public class Display {
 		return value;
 	}
 	
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
 	public static void main(String[] args) {
 		Display d = new Display(24);
 		Display.step = 2;
