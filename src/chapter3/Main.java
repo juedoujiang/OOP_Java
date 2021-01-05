@@ -12,7 +12,7 @@ public class Main {
 			s = in.next();
 			
 		}
-		
+		in.close();
 
 	}
 
